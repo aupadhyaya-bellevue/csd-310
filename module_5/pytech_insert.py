@@ -34,11 +34,6 @@ student3 = {
     "last_name": "Three"
 }
 
-# Insert above students to collection and capture student ids
-# student1_id = students.insert_one(student1).inserted_id
-# student2_id = students.insert_one(student2).inserted_id
-# student3_id = students.insert_one(student3).inserted_id
-
 print("-- INSERT STATEMENTS --")
 # Insert all the students and print document ids
 print(f"Inserted student record Student One into the students collection with document id {students.insert_one(student1).inserted_id}")
