@@ -27,12 +27,12 @@ try:
 
     # Select and print all records from team table
     cursor.execute("SELECT team_id, team_name, mascot FROM team")
-    players = cursor.fetchall()
+    teams = cursor.fetchall()
     print("-- DISPLAYING TEAM RECORDS --")
-    for player in players:
-        print(f"Team ID: {player[0]}")
-        print(f"Team Name: {player[1]}")
-        print(f"Mascot: {player[2]}\n")
+    for team in teams:
+        print(f"Team ID: {team[0]}")
+        print(f"Team Name: {team[1]}")
+        print(f"Mascot: {team[2]}\n")
 
     # Select and print all the records from player table
     cursor.execute("SELECT player_id, first_name, last_name, team_id FROM player")
