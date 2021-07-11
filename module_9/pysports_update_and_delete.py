@@ -14,7 +14,7 @@ config = {
     "raise_on_warnings": True
 }
 
-
+# Create a method to print all the player records with team name
 def printAllPlayersWithTeamName(cursor):
     # Define inner join query
     query = "SELECT player_id, first_name, last_name, team_name FROM player " \
